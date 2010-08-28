@@ -1,0 +1,494 @@
+\documentclass[letter,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec} % custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Hugo \textsc{Corbucci}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Informações Pessoais}
+
+\begin{tabular}{p{2.5cm}l}
+    \textsc{Nacionalidade:} & Franco-Brasileiro
+    \\
+    \textsc{Nascimento:} & 26 de Dezembro de 1983\\
+    \textsc{Mora em:}   & São Paulo, Brasil \\
+    \textsc{Email:}     &
+    \href{mailto:hugo.corbucci@gmail.com}{hugo.corbucci@gmail.com}\\
+    \textsc{Blog:}     &
+    \href{http://codeache.blogspot.com}{http://codeache.blogspot.com}
+\end{tabular}
+
+% Section: Education
+\section{Educação}
+\begin{tabular}{p{2.5cm}l}
+  \emph{Atual} & Mestrado em \textsc{Ciências da Computação}\\
+  \textsc{2007} & \textbf{Universidade do Estado de São Paulo}, São Paulo\\
+  & Dissertação: ``Métodos ágeis e software livre: Um estudo do relacionamento entre estas duas comunidades''\\
+  & \small Orientador: Prof. Alfredo \textsc{Goldman}\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{2006} & Graduação em \textsc{Ciências da Computação}\\
+  \textsc{2003} &\normalsize\textbf{Universidade do Estado de São Paulo}, São Paulo\\
+  & Dissertação: ``Archimedes: An Open Source CAD developed with\\
+  & eXtreme Programming and Object Orientation''\\
+  & \small Orientador: Fabio \textsc{Kon}\\
+  & ``Aluno Destaque'' pela Sociedade Brasileira de Computação\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{2001} & \textbf{Lycée Pasteur}, São Paulo\\
+  \textsc{1990} & Colégio Experimental bilíngue Português-Francês\\
+  & Exame de aprovação Francês \textit{Baccalaureat Scientifique}: 14/20
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{1990} & \textbf{Escola Pública Primária Foyatier}, Paris\\
+  \textsc{1986} & Escola primária no ensino Francês\\
+\end{tabular}
+
+% Section: Languages
+\section{Línguas}
+\begin{tabular}{p{2.5cm}l}
+ \textsc{Português:}&Nativo\\
+ \textsc{Francês:}&Nativo\\
+ \textsc{Inglês:}&Fluente\\
+ \textsc{Espanhol:}&Conhecimentos básicos\\
+\end{tabular}
+
+\section{Conhecimentos com Linguagens de Programação}
+\begin{tabular}{p{2.5cm}l}
+ Básico:& C, C++, Python, C\#, Haskell\\
+ Intermediário:& Smalltalk, Javascript\\
+ Avançado:& Java, Ruby\\
+\end{tabular}
+
+\section{Interesses e Tópicos de Pesquisa}
+
+\begin{itemize}
+\item Métodos Ágeis
+\item ``Ecossistema'' do Software Livre
+\item \textit{Dojo}s de Programação
+\item Ambientes Integrados de Desenvolvimento (\textit{IDE})
+\item Código Limpo
+\item Testes automatizados de usuários na interface gráfica
+\item Sistemas Multi-linguagens
+\item Sistemas tolerantes a falhas
+\item Linguagens de Programação com sintaxes mais próximas das
+  linguagens naturais
+\end{itemize}
+
+\section{Destaques}
+
+\begin{itemize}
+\item Programador generalista com interesse tanto nos aspectos
+  técnicos quanto sociais da programação.
+\item Desenvolvedor de software em diversas aplicações (de aplicações
+  \textit{web} até \textit{desktop}, linha de comando até interfaces
+  gráficas passando por serviços).
+\item Altamente qualificado em programação orientada a objetos
+  (encapsulamento, coesão, padrões de projeto, UML, testes de unidade,
+  testes de integração, \textit{mocks/stubs} e convenções).
+\item Altamente qualificado em tecnologias Java (SWT, \textit{Eclipse
+    Rich Client Platform}, Ant, JUnit, Swing, VRaptor).
+\item Altamente qualificado em tecnologias \textit{Web} (\textit{Ruby
+    on Rails}, VRaptor, GWT, AJAX, JSON, Javascript, CSS, HTML, haml,
+  sass, x-path, jquery, prototype).
+\item Experiente em programação em par e no papel de \textit{coach}
+  ágil.
+\item Acostumado tanto a ambientes de trabalho formais e muito
+  informais.
+\end{itemize}
+
+% Section: Work Experience
+\section{Experiência de Trabalho}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \emph{Atual} & Fundador da \textsc{Agilbits}\\
+  \textsc{Mar 2008}& \emph{Desenvolvedor e Consultor Ágil}\\
+  &\\
+  &A Agilbits foi criada para suprir as necessidades do mercado
+  Brasileiro em termos de treinamento, \textit{coaching} e
+  desenvolvimento de software de alta qualidade. Atuei como o
+  administrador da empresa assim como desenvolvedor, consultor e
+  \textit{coach}.
+  Dentre os diversos projetos desenvolvidos, tivemos diversas
+  experiências com \textit{Ruby on Rails} desde sistemas de gestão de
+  conteúdo (\textit{CMS}) simples até processamento de imagens e
+  sistemas de submissões.
+  Do lado do \textit{Java}, atuei como membro de uma equipe de 3 a 5
+  pessoas que liderou desde a fase de exploração de um projeto até o
+  desenvolvimento completo de um produto em mais de 25 iterações. O
+  projeto é uma aplicação \textit{desktop} baseada na plataforma do
+  Eclipse que atingiu mais de 40000 linhas de código de produção e
+  45000 linhas de testes automatizados.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \emph{Atual} & Consultor na \textsc{AgilCoop}\\
+  \textsc{Jan 2007}& \emph{Instrutor e Coach}\\
+  &\\
+  &A AgilCoop foi fundada por professores, estudantes e ex-estudantes
+  da Universidade do Estado de São Paulo (USP) para promover e
+  divulgar os valores e princípios do desenvolvimento ágil de software
+  no Brasil. Atuei como instrutor durante cursos de verão em cursos
+  como ``Introdução a Métodos Ágeis de Desenvolvimento de Software'',
+  ``Desenvolvimento de Software de Qualidade através de Testes
+  Automatizados'' e ``Laboratório de Programação eXtrema'' em São
+  Paulo, São Carlos e Salvador.
+  Também trabalhei como \textit{coach} em diversos projetos na
+  academia e na indústria. A AgilCoop também é responsável pela
+  organização do ``Encontro Ágil'' do qual foi co-organizador em 2008,
+  2009 e 2010. Esse evento tem como público alvo a comunidade local de
+  pessoas interessadas em métodos ágeis que procuram por contato com
+  pessoas mais experientes.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \emph{Atual} & Organizador da \textsc{Agile Brazil}\\
+  \textsc{Set 2009}& \emph{Webmaster, desenvolvedor e membro da equipe
+    de avaliação}\\
+  &\\
+  &Na Agile 2009, aproximadamente 8 Brasileiros se juntaram e
+  decidiram organizar uma conferência nacional sobre métodos ágeis no
+  Brasil. Atuei como membro do comitê organizador desde o início
+  ajudando a formar o comitê de 15 pessoas, a planejar e implementar a
+  estratégia de marketing, a entrar em contato com patrocinadores e a
+  elaborar o programa da conferência. Em Junho de 2010, a conferência
+  recebeu mais de 800 pessoas que submeteram mais de 150 propostas das
+  quais em torno de 40 foram selecionadas. Trabalhei com o Danilo
+  \textsc{Sato} no desenvolvimento do sistema de submissões em
+  \textit{Ruby on Rails}.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Mar - Jun} & \textsc{Instituto de Matemática e Estatística
+    (IME/USP)} - Monitor\\
+  \textsc{2008 a 2010}& \emph{Coach de XP e programador}\\
+  &\\
+  & Fui monitor da disciplina de Programação Extrema (XP) por 3 anos
+  seguidos. Atuei como \textit{Coach} e ajudei mais de 5 equipes em
+  cada ano. Ajudei a implantar um scrum de scrums para permitir o
+  aumento de inscritos na disciplina de 40 estudantes para mais de 60
+  e de 5 equipes para mais de 8.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Mar - Jun} & \textsc{Instituto de Matemática e Estatística
+    (IME/USP)} - Monitor\\
+  \textsc{2007 a 2009}& \emph{Palestrante, revisor de código e crítico
+    de código}\\
+  &\\
+  &Monitor das disciplinas de Programação Orientada a Objetos e
+  Programação Concorrente por 3 anos seguidos. Revisei e corrigi
+  códigos de alunos de graduação e de pós-graduação assim como dei
+  algumas aulas sob cada um dos assuntos.
+\end{tabular}
+
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Set 2007} & Desenvolvedor na \textsc{MAPS Risk
+    Management Solutions} \\
+  \textsc{Dez 2006} &\emph{Desenvolvedor de Software and Coach Ágil}\\
+  &\\
+  & A MAPS é uma empresa que provê soluções para análise de risco do
+  mercado financeiro. Eu me juntei à equipe que estava desenvolvendo o
+  novo sistema destinado a substituir o antigo. Trabalhei numa equipe
+  de 8 pessoas como desenvolvedor e \textit{coach} ágil para montar
+  uma aplicação \textit{web} em Java usando \textit{Java Server
+    Faces}. Ajudei a implantar um pouco de programação em par, testes
+  de unidades e quadros de acompanhamento.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Dez 2006} & \textsc{Banco Votorantim} - Estágio\\
+  \textsc{Dez 2005} &\emph{Desenvolvedor de Software}\\
+  &\\
+  &Entrei nessa equipe de 8 pessoas como o responsável de TI sob a
+  supervisão de 2 analistas de negócio e 6 especialistas da área. Apesar de
+  ter sido contratado para manter a aplicação existente, quando a
+  maioria dos membros da equipe saiu da empresa, fiquei responsável
+  por ajudar os analistas de negócio a manter a área funcionando.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Mar - Jun} & \textsc{Instituto de Matemática e Estatística
+    (IME/USP)} - \textit{Coach} de XP\\
+  \textsc{2006 e 2007}& \emph{Líder de equipe e programador}\\
+  &\\
+  &  Trabalhei como \textit{Coach} de XP, líder de equipe e
+  programador na disciplina de Programação Extrema (XP) por 2 anos
+  seguidos. Ajudei duas equipes bem diferentes a desenvolver o
+  \emph{Archimedes - O CAD Aberto}  do nada até uma aplicação baseada
+  no SWT em Java e, então, evolui-la para uma aplicação baseada na
+  plataforma do Eclipse. Coordenei uma equipe de 8 e depois de 7
+  estudantes de graduação em 2006 e 2007 respectivamente.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Out 2005} & \textsc{Instituto de Matemática e Estatística
+    (IME/USP)} - Iniciação Científica\\
+  \textsc{Jan 2005}& \emph{Desenvolvedor de Ontologia}\\
+  &\\
+  & A Prof. Dra. Renata \textsc{Wasserman} e o Prof. Dr. Fabio
+  \textsc{Kon} atuaram como meus orientadores para elaboração de uma
+  ontologia sobre orientação a objetos. O trabalho serviu como base
+  para uma busca semântica textual em alguns vídeos de aulas dadas por
+  Joe Yoder.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+  \textsc{Dez 2003} & \textsc{Cidade do Conhecimento} - Estágio\\
+  \textsc{Jun 2003}& \emph{Webmaster}\\
+  &\\
+  & Trabalhei como \textit{webmaster} na Cidade do Conhecimento
+  mantendo um sistema de ensino a distância desenvolvido em PHP.
+\end{tabular}
+
+\section{Publicações}
+
+\begin{itemize}
+\item \textbf{Open Source and Agile Methods: Two worlds closer than it
+    seems.} Hugo Corbucci, Alfredo Goldman.
+
+  \textit{Anais da 11a Conferência Internacional sobre Desenvolvimento
+    Ágil de Software (XP 2010), Trondheim, Noruega.} Junho 2010.
+
+\item \textbf{Prototypes Are Forever: Evolving from a Prototype
+    Project to a Full-Featured System} Hugo Corbucci, Mariana Vivian
+  Bravo, Alexandre Freire da Silva, Fernando Freire da Silva.
+
+  \textit{Anais da 11a Conferência Internacional sobre Desenvolvimento
+    Ágil de Software (XP 2010), Trondheim, Noruega.} Junho 2010.
+
+\item \textbf{Open Source and Agile: Two worlds that should have a
+    closer interaction} Hugo Corbucci, Alfredo Goldman.
+
+  \textit{Anais do V Workshop Latino-Americano sobre Engenharia de
+    Software Experimental, 2008 (ESELAW 2008), Salvador, Brasil}
+  Novembro 2008.
+
+\item \textbf{Coding Dojo: an environment for learning and sharing
+    Agile practices} Danilo Sato, Hugo Corbucci, Mariana Bravo.
+
+  \textit{Anais da Conferência Ágil 2008 (Agile 2008), Toronto,
+    Canadá.} Agosto 2008.
+
+\item \textbf{Archimedes ­ o CAD Aberto: Uma aplicação para desenho
+    técnico baseada na plataforma do Eclipse} Hugo Corbucci, Mariana
+  Vivian Bravo.
+
+  \textit{Anais do VII Workshop de Software Livre, 2007 (WSL 2007),
+    Porto Alegre, Brasil.} Abril 2007.
+
+\item \textbf{Archimedes: Um CAD Livre desenvolvido com programação
+    extrema e orientação a objetos} Hugo Corbucci, Mariana Vivian
+  Bravo. Orientador: Fabio Kon.
+
+  \textit{Trabalho de conclusão de curso de Bacharelado em Ciências da
+    Computação no IME/USP, São Paulo, Brasil.} Dezembro 2006.
+\end{itemize}
+
+\section{Atividades}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Ago 2010} & Palestrante no \textbf{TDC 2010}\\
+  &Dando uma palestra sobre ``Código Limpo'' em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Ago 2010} & Palestrante no \textbf{DevInSampa 2010}\\
+  &Dando uma palestra sobre ``Código Limpo'' em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jun 2010} & Palestrante na \textbf{Agile Brazil 2010}\\
+  &Dando um tutorial sobre ``Retrospectivas Ágeis'' em Porto Alegre, RS, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jun 2010} & Palestrante no \textbf{XP 2010}\\
+  &Dando um \textit{workshop} de 180 minutos sobre ``Dojo de
+  Programação - Formato Kake'',\\
+  & apresentando um relato de experiência ``Protótipos são para sempre''\\
+  & com Alexandre \textsc{Freire} e Mariana \textsc{Bravo},\\
+  & e um Kata com Danilo \textsc{Sato} em Smalltalk em Trondheim, Noruega.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Dez 2009} & Palestrante no \textbf{1o Encontro de Software
+    Livre da Dataprev}\\
+  &Dando uma palestra sobre ``Métodos Ágeis no contexto do Software Livre''\\
+  &em Campo Grande, MS, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Dez 2009} & Palestrante no \textbf{4o SOLISC}\\
+  &Dando uma palestra sobre ``Archimedes - o CAD Aberto'' em Florianópolis, SC, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Nov 2009} & Palestrante no \textbf{ESELAW 2008}\\
+  &Dando um curso sobre ``Métodos Ágeis'' e\\
+  &uma palestra sobre ``Métodos Ágeis no contexto do Software Livre'' em Salvador, BA, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Out 2009} & Palestrante no \textbf{Encontro Ágil 2009}\\
+  &Dando uma palestra sobre ``Métodos Ágeis no contexto do Software Livre'' e\\
+  &um \textit{workshop} sobre ``Jogo de Lego sobre Lean'' do trabalho de\\
+  &Francisco \textsc{Trindade} e Danilo \textsc{Sato} em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Ago 2009} & Voluntário na \textbf{Agile 2009}\\
+  & com bolsa acadêmica em Chicago, IL, EUA.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jun 2009} & Palestrante no \textbf{FISL 2009}\\
+  &Dando uma palestra sobre ``Archimedes - o CAD Aberto'',\\
+  & um tutorial sobre ``Eclipse RCP - Aplicações \textit{desktop} nativas'' e\\
+  & um \textit{workshop} sobre ``Dojo de Programação''\\
+  & no 10o Fórum Internacional de Software Livre em Porto
+  Alegre, RS, Brasil.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Abr 2009} & Avaliador de propostas para o \textbf{FISL 2009}.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Fev 2009} & Palestrante no \textbf{2o Techday da Locaweb}\\
+  & Apresentando um Kata sobre ``Rails + RSpec + Cucumber'' em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jan 2009} & Participante da \textbf{Campus Party 2009}\\
+  &em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Out 2008} & Estudante voluntário na \textbf{OOPSLA'08}\\
+  & com bolsa nível Ouro em Nashville, TN, EUA.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Set 2008} & Palestrante na \textbf{PyCon Brasil 2008}\\
+  & Dando um \textit{workshop} sobre ``Dojo de programação'' no Rio de Janeiro, RJ, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Ago 2008} & Palestrante e Voluntário na \textbf{Agile 2008}\\
+  &Apresentando um relato de experiência ``Coding Dojo: An Environment for
+  Learning and\\
+  & Sharing Agile Practices'' com Danilo \textsc{Sato} e Mariana \textsc{Bravo} e\\
+  & trabalhando como voluntário com bolsa acadêmica em Toronto, ON, Canadá.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jun 2008} & Palestrante no \textbf{FISL 2008}\\
+  &Dando um \textit{workshop} sobre ``Dojo de Programação''\\
+  & no 9o Fórum Internacional de Software Livre em Porto
+  Alegre, RS, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Abr 2008} & Avaliador de propostas para o \textbf{FISL 2008}.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Mar 2008} & Palestrante no \textbf{Campus Party 2008}\\
+  &Dando um \textit{workshop} sobre ``Archimedes - o CAD Aberto'' em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jan 2008} & Palestrante no \textbf{GrupySP}\\
+  &Dando um \textit{workshop} sobre ``Dojo de Programação'' em São Paulo, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Nov 2007} & 12o lugar na final Brasileira da
+  \textbf{Maratona de Programação da ACM-ICPC}\\
+  & com Jeferson \textsc{Rodrigues da Silva} e Marcio
+  \textsc{Takashi Iura Oshiro}\\
+  & em Belo Horizonte, MG, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Out 2007} & Estudante Voluntário na \textbf{OOPSLA'07}\\
+  & com bolsa nível Ouro em Montreal, QC, Canadá.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Mai 2007} & Participante do \textbf{FISL 2007}\\
+  & o 8o Fórum Internacional de Software Livre em Porto
+  Alegre, RS, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jul 2007} & Co-fundador do \textbf{Coding Dojo São Paulo}\\
+  & com Danilo \textsc{Sato} e Mariana \textsc{Bravo}.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Abr 2006} & Participante do \textbf{FISL 2006}\\
+  & o 7o Fórum Internacional de Software Livre em Porto
+  Alegre, RS, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Jan 2006} & Fundador do \textbf{Archimedes: o CAD Aberto}\\
+  & usando Java e SWT.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Nov 2005} & 16o lugar na final Brasileira da
+  \textbf{Maratona de Programação da ACM-ICPC}\\
+  & com Jeferson \textsc{Rodrigues da Silva} e Marcio
+  \textsc{Takashi Iura Oshiro}\\
+  & em Riberão Preto, SP, Brasil.\\
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Mar 2005} & Participante do \textbf{FISL 2005}\\
+  & o 6o Fórum Internacional de Software Livre em Porto
+  Alegre, RS, Brasil.\\
+\end{tabular}
+
+\section{Diversidade}
+
+Ficção Científica, Escalada, Viajar, Teatro e Cinema.
+
+\end{document}
