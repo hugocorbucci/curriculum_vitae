@@ -1,5 +1,8 @@
 BASE_NAME = CV_HugoCorbucci
 XELATEX = xelatex
+.DEFAULT_GOAL := all
+
+all: en pt_BR
 
 en: $(BASE_NAME)_en.pdf
 	open $<
