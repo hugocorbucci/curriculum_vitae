@@ -6,7 +6,7 @@ if [ -z "$(which xelatex)" ]; then
   (curl --version > /dev/null) || ( (brew --version > /dev/null) && (brew install curl > /dev/null) )
   (curl --version > /dev/null) || ( (apt-get --version > /dev/null) && (apt-get install curl -y > /dev/null) )
   if [ ! -f /tmp/BasicTeX.pkg ]; then
-    curl -L --silent "http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg" > /tmp/BasicTeX.pkg
+    curl -L --silent "https://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg" > /tmp/BasicTeX.pkg
   fi
   sudo installer -pkg /tmp/BasicTeX.pkg -target /
   sudo /Library/TeX/texbin/tlmgr update --self

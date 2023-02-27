@@ -1,0 +1,115 @@
+% !TEX program = XeLaTeX
+\documentclass[letter,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec} % custom \section
+\usepackage{multicol}
+\usepackage{multirow}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\pagestyle{empty}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Hugo \textsc{Corbucci}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+\begin{multicols}{2}
+%Section: Personal Data
+\section{Informações Pessoais}
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Nacionalidade:} & Franco-Brasileiro\\
+  \textsc{Nascimento:} & 26 de Dezembro de 1983\\
+  \textsc{Mora em:}   & São Paulo, SP, Brasil \\
+  \textsc{Email:}     &
+  \href{mailto:hugo.corbucci@gmail.com}{hugo.corbucci@gmail.com}\\
+  \textsc{Website:} & \href{http://hugocorbucci.com}{http://hugocorbucci.com}
+\end{tabular}
+
+% Section: Programming Languages
+\section{Linguagens de Programação}
+\begin{tabular}[t]{p{2.5cm}l}
+  \multirow[t]{2}{*}{Básico:} & C, C++, Python,\\
+ & Haskell, Scala, Groovy\\
+  \multirow[t]{2}{*}{Intermediário:} & Java, Smalltalk, Clojure,\\
+ & Objective-C, Swift\\
+ Avançado:& Go, Ruby, Javascript\\
+\end{tabular}
+\end{multicols}
+
+\begin{multicols}{2}
+% Section: Interests
+\section{Interesses}
+\begin{itemize}
+\item Desenvolvimento e evolução de produtos
+\item Arquitetura de sistemas
+\item Entrega Contínua
+\item Experimentação Lean
+\end{itemize}
+
+% Section: Languages
+\section{Línguas}
+\begin{tabular}{p{2.5cm}l}
+ \textsc{Português:}&Nativo\\
+ \textsc{Francês:}&Nativo\\
+ \textsc{Inglês:}&Fluente\\
+ \textsc{Espanhol:}&Conhecimentos básicos\\
+\end{tabular}
+\end{multicols}
+
+
+\section{Destaques}
+
+\begin{itemize}
+\item Arquiteto de Software com ampla experiência em sistemas distribuídos, \emph{cloud} (nuvem), \emph{compliance} (regulamentações) e planejamento arquitetural de longo prazo.
+\item Programador generalista com interesse tanto nos aspectos
+  técnicos quanto sociais da programação. Trabalhou em vários contextos desde aplicações \textit{web} até \textit{desktop}, linha de comando até interfaces
+  gráficas passando por serviços e APIs.
+\item Trabalha com equipes para obter o máximo de cada membro da equipe. Ajuda a desenvolver profissionais saídos direto da faculdade assim como outros com mais de 10 anos de experiência.
+\item Líder técnico em equipes de experimentação lean e desenvolvimento de negócios.
+\item Experiência em micro-serviços, automação de preparação de ambientes e arquiteturas para deploy contínuo.
+\item Mestre em \textsc{Ciências da Computação} na \textbf{Universidade de São Paulo}, São Paulo, Brasil
+\end{itemize}
+
+% Section: Work Experience
+\section{Experiência de Trabalho}
+
+\textsc{DigitalOcean} - Engenheiro de Software \emph{Principal} - \textsc{09/2016}-\textsc{05/2023} - EUA e BR
+
+Passei de engenheiro fullstack a líder técnico a, nos últimos 2.5 anos, arquiteto sendo responsável pelo \emph{design} geral dos sistemas da empresa que incluia 600 engenheiros. Também fui o principal contato para tudo que diz respeito a regulamentações e controle de mudanças relacionadas a SOX.
+
+\textsc{ThoughtWorks} - Consultor \emph{Lead} - \textsc{11/2011}-\textsc{08/2016} - EUA, Canadá e Brasil
+
+Trabalhei em vários projects pelos Estados Unidos, Canadá e Brasil com grandes empresas lidando tanto com sistemas legados assim como novos sistemas para averiguar valor de negócio.
+
+\textsc{Agile Alliance Brazil \& Agile Brazil} - diretor e organizador - \textsc{09/2009}-\textsc{01/2021} - SP/SP
+
+Como organizador fundador da conferência Agile Brazil, atuei em várias frentes para criar e crescer o que virou no seu auge a maior conferência de agilidade da América Latina. Participei tanto das equipes de programa quanto desenvolvendo sistemas usados pelas conferência e criando comitês para tocar a conferência.
+Como diretor fundador da organização sem fins lucrativos Agile Alliance Brazil de 01/2014 até 11/2018, ajudei a desenhar os processos e atividades para manter a organização e crescer sua receita.
+
+\end{document}

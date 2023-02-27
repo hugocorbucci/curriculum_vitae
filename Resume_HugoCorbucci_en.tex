@@ -1,0 +1,115 @@
+% !TEX program = XeLaTeX
+\documentclass[letter,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec} % custom \section
+\usepackage{multicol}
+\usepackage{multirow}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\pagestyle{empty}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Hugo \textsc{Corbucci}
+	}\bigskip\par}
+
+  %--------------------SECTIONS-----------------------------------
+\begin{multicols}{2}
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{p{2.5cm}l}
+  \textsc{Nationality:} & French-Brazilian\\
+  \textsc{Birth:} & December 26, 1983\\
+  \textsc{Living in:}   & Sao Paulo, SP, Brazil\\
+  \textsc{Email:}     &
+  \href{mailto:hugo.corbucci@gmail.com}{hugo.corbucci@gmail.com}\\
+  \textsc{Website:}     & \href{http://hugocorbucci.com}{http://hugocorbucci.com}
+\end{tabular}
+
+% Section: Programming Languages
+\section{Programming Languages}
+\begin{tabular}[t]{p{2.5cm}l}
+  \multirow[t]{2}{*}{Basic:} & C, C++, Python,\\
+ & Haskell, Scala, Groovy\\
+  \multirow[t]{2}{*}{Intermediate:} & Java, Smalltalk, Clojure,\\
+ & Objective-C, Swift\\
+ Advanced:& Go, Ruby, Javascript\\
+\end{tabular}
+\end{multicols}
+
+\begin{multicols}{2}
+%Section: Interests
+\section{Interests}
+\begin{itemize}
+\item Product development and Evolution
+\item Systems design
+\item Continuous Delivery
+\item Lean Experimentation
+\end{itemize}
+
+% Section: Languages
+\section{Languages}
+\begin{tabular}{p{2.5cm}l}
+ \textsc{Portuguese:}&Native\\
+ \textsc{French:}&Native\\
+ \textsc{English:}&Fluent\\
+ \textsc{Spanish:}&Basic Knowledge\\
+\end{tabular}
+\end{multicols}
+
+
+\section{Highlights}
+
+\begin{itemize}
+\item Architect with vast experience in distributed systems design, cloud, compliance and long term architecture planning.
+\item Generalist programmer with interests in both the technical
+  aspects and the social aspects of programming. Worked in many contexts from web to desktop, command-line to graphical to services to APIs.
+\item Works with teams to maximize every team member's potential. Helps mentor professionals straight out of college as well as 10+ years of experience ones.
+\item Technical leader for lean experimentation and business development.
+\item Experienced in micro-services, automation for environment setup and continuous deployment ready architectures.
+\item MSc in \textsc{Computer Science} with the \textbf{University of São Paulo}, São Paulo, Brazil
+\end{itemize}
+
+% Section: Work Experience
+\section{Work Experience}
+
+\textsc{DigitalOcean} - Principal Software Engineer - \textsc{Sep 2016}-\textsc{May 2023} - SF/CA, NYC/NY, SP/BR
+
+Went from full stack engineer to technical leader to, for the last 2.5 years, architect tackling overall system design for the whole organization including up to 600 engineers. I was also the main contact for all compliance and SOX related engineering change controls.
+
+\textsc{ThoughtWorks} - Lead Consultant - \textsc{Nov 2011}-\textsc{Aug 2016} - Chicago/IL, Redmond/WA, Calgary/CA, Atl/GA, CE/BR, SF/CA
+
+Worked across multiple projects across Canada, United States and Brazil with large organizations tackling both large legacy systems as well as greenfield new proposals and experiments to prove business value.
+
+\textsc{Agile Alliance Brazil \& Agile Brazil} - board member and organizer - \textsc{Sept 2009}-\textsc{Jan 2021} - SP/BR
+
+As a founding organizer of the Agile Brazil conference, wore many hats to start and grow what peaked to the largest Agile conference in Latin America. Both evaluating and building the program, developing systems used by the conference and establishing committees to run the conference.
+As a founding board member of the Agile Alliance Brazil non-profit in Jan 2014 until Nov 2018, helped shape the processes and activities to maintain the organization and generate its revenue.
+
+\end{document}
